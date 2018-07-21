@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600');
+@font-face {
+  font-family: 'value';
+  src: url('../data/type/value-medium.otf');
+}
+
+* {
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  opacity: 1;
+  animation: loadIn 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.video-background-container {
+  position: fixed;
+  z-index: -100;
+  opacity: 0.5;
+}
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.titleContainer {
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleText {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.shortFilm h2 {
+  font-family: 'value', sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  letter-spacing: 1pt;
+  color: #fcf3de;
+  text-align: right;
+  margin: 10px auto;
+  align-self: center;
+}
+
+.titleText h3 {
+  font-family: 'value', sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  color: #fcf3de;
+  margin: 10px 0;
+  letter-spacing: 0.5pt;
+}
+
+.titleText h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fcf3de;
+  transition: color 0.5s ease-in-out;
+}
+
+.titleText h3 a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e13742;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 50px;
+  font-family: 'value', sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  letter-spacing: 0.5pt;
+  color: #fcf3de;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagline p {
+  opacity: 0.25;
+  animation: opacityLoop 2s alternate infinite ease-in-out;
+}
+
+@keyframes opacityLoop {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.downArrow {
+  width: 36px;
+  margin: 0 auto;
+  height: auto;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.downArrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurbContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.blurb {
+  width: 56%;
+  font-family: 'value', sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  color: #fcf3de;
+  margin: 50px auto 100px auto;
+}
+
+.emblem {
+  width: 36px;
+  margin: 0 auto;
+  height: auto;
+}
+
+footer {
+  width: 56%;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backToTop {
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'value', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #757575;
+  opacity: 0.5;
+  transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.backToTop:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #fcf3de;
+}
+
+.upArrow {
+  display: block;
+  width: 36px;
+  height: auto;
+  transform: rotate(180DEG);
+}
+
+.backToTop p {
+  width: auto;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 100px auto 100px auto;
+}
+
+.footerText {
+  width: 50%;
+  font-family: 'value', sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  color: #fcf3de;
+}
+
+.footerText a {
+  text-decoration: none;
+  color: #757575;
+  transition: color 0.5s ease-in-out;
+}
+
+.footerText a:hover {
+  color: #e13742;
+}
+
+.emailForm {
+  width: 50%;
+}
+
+#mc_embed_signup {
+  font-family: 'value', sans-serif;
+  color: #fcf3de;
+  margin-left: 50px;
+}
+
+#mc_embed_signup h2 {
+  font-size: 1.8vw;
+  font-weight: 400;
+  margin: 0 auto 40px auto;
+}
+
+#mc_embed_signup div#mce-responses {
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0% 0%;
+}
+
+#mce-responses a {
+  color: #fcf3de;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.indicates-required {
+  display: none;
+}
+
+.mc-field-group {
+  margin: 20px auto;
+  font-size: 1vw;
+  color: #757575;
+}
+
+.response {
+  font-size: 10pt;
+  color: #fcf3de;
+}
+
+#mc_embed_signup input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  font-family: 'value', sans-serif;
+  font-size: 20pt;
+  color: #fcf3de;
+  transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+#mc_embed_signup input[type=text]:focus {
+  outline: none;
+}
+
+#mc_embed_signup input[type=text]:hover {
+  border-bottom: 1px solid #fcf3de;
+  color: #fcf3de;
+}
+
+#mc_embed_signup input[type=email]:focus {
+  outline: none;
+}
+
+#mc_embed_signup input[type=email]:hover {
+  border-bottom: 1px solid #fcf3de;
+  color: #fcf3de;
+}
+
+#mc_embed_signup .button {
+  display: block;
+  width: 50%;
+  height: 50px;
+  border: none;
+  margin-top: 40px;
+  outline: 1px solid #757575;
+  border-radius: 0px;
+  font-family: 'value', sans-serif;
+  font-size: 1vw;
+  color: #757575;
+  background-color: transparent;
+  transition: color 0.5s ease-in-out, outline 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#mc_embed_signup .button:hover {
+  outline: 1px solid #e13742;
+  background-color: #e13742;
+  border-radius: 0px;
+  color: #fcf3de;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .titleText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+  }
+  .titleContainer img {
+    order: 1;
+  }
+  .titleText h3 {
+    font-size: 15pt;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .shortFilm {
+    order: 2;
+    margin: 30px 0;
+  }
+  .shortFilm h2 {
+    font-size: 15pt;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .tagline {
+    font-size: 12pt;
+  }
+  .blurb {
+    font-size: 12pt;
+  }
+  footer {
+    width: 56%;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .backToTop {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'value', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #757575;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .footerText {
+    width: 100%;
+    font-family: 'value', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #fcf3de;
+    margin-bottom: 50px;
+  }
+  .emailForm {
+    width: 100%;
+  }
+  #mc_embed_signup {
+    font-family: 'value', sans-serif;
+    font-size: 1.5vw;
+    color: #fcf3de;
+    margin-left: 0px;
+  }
+  .clear input[type=submit] {
+    margin: 0 auto;
+  }
+  #mc_embed_signup h2 {
+    font-size: 15pt;
+  }
+  .mc-field-group {
+    margin: 20px auto;
+    font-size: 15pt;
+    color: #757575;
+  }
+  #mc_embed_signup .button {
+    width: 100%;
+    font-size: 15pt;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titleContainer {
+    width: 90%;
+  }
+  .blurb {
+    width: 90%;
+  }
+  footer {
+    width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .downArrow {
+    width: 20px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .emblem {
+    width: 20px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .upArrow {
+    width: 20px;
+    margin: 0 auto;
+    height: auto;
+  }
+  #mc_embed_signup {
+    font-size: 18pt;
+  }
+}
